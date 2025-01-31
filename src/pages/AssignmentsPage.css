@@ -1,0 +1,73 @@
+.assignments-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .search-box {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .assignments-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .assignment-item {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assignment-item.pending {
+    background-color: #ffe6e6;
+  }
+  
+  .assignment-item.completed {
+    background-color: #e6ffe6;
+  }
+  
+  .assignment-item h3 {
+    cursor: pointer;
+  }
+  
+  .complete-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #005f73;
+  }
+  

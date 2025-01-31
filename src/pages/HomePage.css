@@ -1,0 +1,368 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7; /* Soft light gray background */
+  color: #333;
+  line-height: 1.8;
+  min-height: 100vh; /* Ensure the body takes up the full height */
+}
+
+/* Home Page Header */
+.home-header {
+  text-align: center;
+  background: linear-gradient(135deg, #ff6f61, #ff9e6b); /* Warm gradient */
+  color: white;
+  padding: 100px 20px;  /* Adjusted padding */
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  align-items: center;
+  background-color: #333; /* Dark background for the nav */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff6f61; /* Highlight color */
+  border-radius: 5px;
+}
+
+/* Home Header Text */
+.home-header h1 {
+  font-size: 4.5rem; /* Slightly larger for a more dramatic headline */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.home-header p {
+  font-size: 1.4rem; /* Adjusted for better readability */
+  margin-bottom: 40px;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+  margin-top: 30px;
+}
+
+.cta-button {
+  padding: 18px 40px;
+  background-color: #ff6f61; /* Warm coral */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff9e6b; /* Lighter coral */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features-section {
+  margin: 80px 0;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.features-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #6a5acd; /* Deep purple */
+}
+
+.features-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-section ul li {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  margin: 80px 0;
+}
+
+.how-it-works-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #6a5acd;
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.step h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+.step p {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.featured-courses h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #6a5acd;
+}
+
+.courses-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  width: 30%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #6a5acd;
+}
+
+.course-card p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.course-card .cta-button {
+  margin-top: 20px;
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.course-card .cta-button:hover {
+  background-color: #ff9e6b;
+  transform: translateY(-3px);
+}
+
+/* Featured Instructors Section */
+.instructor-highlight {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.instructor-highlight h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #6a5acd;
+}
+
+.instructor-grid {
+  display: flex;
+  justify-content: space-around; /* Ensures instructors are spaced evenly */
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.instructor {
+  text-align: center;
+  flex: 1;
+  min-width: 250px; /* Ensures each instructor card has a minimum width */
+  transition: transform 0.3s ease;
+}
+
+.instructor img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #ff6f61;
+}
+
+.instructor h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+
+.instructor p {
+  color: #777;
+}
+
+.instructor:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #6a5acd;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  width: 30%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #777;
+  transition: all 0.3s ease;
+  text-align: center; /* Ensures text is centered within testimonial */
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #ff6f61;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-top: 2px solid #ff6f61; /* Coral border */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .steps-grid, .courses-grid, .instructor-grid, .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step, .course-card, .instructor, .testimonial {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

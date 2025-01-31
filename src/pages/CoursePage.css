@@ -1,0 +1,113 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Course list layout */
+  .course-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Course page padding */
+  .course-page {
+    padding: 20px;
+  }
+
+  /* Search bar and select dropdown */
+  .search-bar, select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Course card title styling */
+  .course-card h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Course card description styling */
+  .course-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Adjust buttons */
+  .course-card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /* Centering header text */
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* Mobile-friendly grid for images */
+  .course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Adjust padding for footer */
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design for larger screens (tablets & small desktops) */
+@media (max-width: 1024px) {
+  .course-list {
+    grid-template-columns: 1fr 1fr 1fr;  /* Three-column layout */
+  }
+
+  .course-page {
+    padding: 30px;  /* Increase padding for slightly larger screens */
+  }
+
+  /* Increase text size for headings on medium screens */
+  h2 {
+    font-size: 24px;
+  }
+
+  .course-card h3 {
+    font-size: 20px;
+  }
+
+  .search-bar, select {
+    width: 80%;  /* Make search bar slightly smaller on larger mobile screens */
+    margin-bottom: 10px;
+  }
+
+  .course-card button {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1025px) {
+  .course-list {
+    grid-template-columns: repeat(4, 1fr);  /* Four-column layout */
+    gap: 30px;
+  }
+
+  .course-page {
+    padding: 50px;
+  }
+
+  /* Adjust fonts for larger screens */
+  h2 {
+    font-size: 28px;
+  }
+
+  .course-card h3 {
+    font-size: 22px;
+  }
+
+  .course-card p {
+    font-size: 16px;
+  }
+}
